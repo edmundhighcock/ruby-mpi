@@ -1,6 +1,6 @@
 require "mkmf"
 
-CONFIG['CC'] = "mpicc"
+CONFIG['CC'] = ENV['MPICC'] || "mpicc"
 gem_path = nil
 begin
   require "rubygems"
